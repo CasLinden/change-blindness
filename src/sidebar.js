@@ -1,4 +1,4 @@
-import { imagesA, setCurrent} from "./index";
+import { imagesA, setCurrent, stopShow, alternate} from "./index";
 
 function showThumbnails() {
     const sidebar = document.getElementById("sidebar");
@@ -15,7 +15,9 @@ function clickThumbnails() {
   thumbnails.forEach((element) => {
     console.log(element)
     element.addEventListener('click', () => {
+      stopShow()
       setCurrent(thumbnails.indexOf(element))
+      alternate()
     })
   })
 }

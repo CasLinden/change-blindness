@@ -22,12 +22,12 @@ import {clickThumbnails, showThumbnails} from "./sidebar"
 const img = document.querySelector('img')
 
 const imagesA = [img1A, img2A, img3A, img4A, img5A, img6A, img7A]
-const imagesB = [img1B, img2B, img3B, img4B, img5B, img6B, img7B];
+const imagesB = [img1B, img2B, img3B, img4B, img5B, img6B, img7B]
 
 let currentA
 let currentB
 
-let maskDuration = 0
+let maskDuration = 500
 let pictureDuration = 2000
 
 function setCurrent(index) {
@@ -47,10 +47,22 @@ function swap() {
   }
 }
 
+
+let intervID;
+
 function alternate() {
-  setInterval(swap, pictureDuration)
+  if (!intervID) {
+    intervID = setInterval(swap, pictureDuration);
+  }
 }
-alternate()
+// alternate();
+
+function stopShow() {
+  clearInterval(intervID);
+  intervID = null;
+}
+
+
 
 function mask() {
   img.src = ""
@@ -59,7 +71,7 @@ function mask() {
 showThumbnails()
 clickThumbnails()
 
-export { imagesA, setCurrent }
+export { imagesA, setCurrent, stopShow, alternate}
 
 
 

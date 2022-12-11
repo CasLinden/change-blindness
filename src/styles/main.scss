@@ -39,8 +39,8 @@ body {
   display: flex;
   justify-content: baseline;
   align-items: center;
-  padding: 1rem;
-  font-size: 3rem;
+  padding-left: 4rem;
+  font-size: 4rem;
   height: 10vh;
   display: flex;
   justify-content: center;
@@ -75,6 +75,10 @@ body {
   background-color: $off-black;
   width: 80%;
   height: 10%;
+  margin-bottom: 2rem;
+  border: solid 2px $off-black;
+  border-top: none;
+  border-radius: 0rem 0rem 2rem 2rem;
 }
 
 #content-inner{
