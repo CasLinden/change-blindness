@@ -23,7 +23,7 @@ var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBP
 ___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap);"]);
 ___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css2?family=Rubik+80s+Fade&display=swap);"]);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "* {\n  box-sizing: border-box;\n  padding: 0;\n  margin: 0;\n}\n\nbody {\n  font-family: \"Roboto\", sans-serif;\n  height: 100vh;\n  width: 100vw;\n  margin: 0;\n}\n\n#wrapper {\n  width: 100%;\n  height: 100%;\n  display: grid;\n  grid-template-columns: 1fr 8fr;\n  grid-template-rows: 1fr 10fr;\n  grid-template-areas: \"header header\" \"sidebar content\";\n}\n\n#header {\n  font-family: \"Rubik 80s Fade\", cursive;\n  grid-area: header;\n  background-color: #1F1B24;\n  color: white;\n  display: flex;\n  justify-content: baseline;\n  align-items: center;\n  padding: 1rem;\n  font-size: 3rem;\n  height: 10vh;\n  display: flex;\n  justify-content: center;\n}\n\n#sidebar {\n  grid-area: sidebar;\n  background-color: #1F1B24;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: space-around;\n  gap: 1rem;\n  padding: 1rem;\n  height: 90vh;\n}\n\n.thumbnail {\n  width: 150px;\n  height: auto;\n}\n\n#content {\n  grid-area: content;\n  background-color: #121212;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n}\n\n#controls {\n  background-color: #121212;\n  width: 80%;\n  height: 10%;\n}\n\n#content-inner {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}", "",{"version":3,"sources":["webpack://./src/styles/main.scss"],"names":[],"mappings":"AAUA;EACE,sBAAA;EACA,UAAA;EACA,SAAA;AAPF;;AAUA;EACI,iCAAA;EACA,aAAA;EACA,YAAA;EACA,SAAA;AAPJ;;AAUA;EACE,WAAA;EACA,YAAA;EACA,aAAA;EACA,8BAAA;EACA,4BAAA;EACA,sDAAA;AAPF;;AAWA;EACE,sCAAA;EACA,iBAAA;EACA,yBA/Be;EAgCf,YAAA;EACA,aAAA;EACA,yBAAA;EACA,mBAAA;EACA,aAAA;EACA,eAAA;EACA,YAAA;EACA,aAAA;EACA,uBAAA;AARF;;AAWA;EACE,kBAAA;EACA,yBA7Ce;EA8Cf,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,6BAAA;EACA,SAAA;EACA,aAAA;EACA,YAAA;AARF;;AAWA;EACE,YAAA;EACA,YAAA;AARF;;AAWA;EACE,kBAAA;EACA,yBA7DU;EA8DV,aAAA;EACE,sBAAA;EACA,mBAAA;AARJ;;AAWA;EACE,yBApEU;EAqEV,UAAA;EACA,WAAA;AARF;;AAWA;EACE,aAAA;EACA,mBAAA;EACA,uBAAA;AARF","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');\n@import url('https://fonts.googleapis.com/css2?family=Rubik+80s+Fade&display=swap');\n\n$primary-color: #2fa8cc;\n$secondary-color: #f4f4f4;\n$purplish-black: #1F1B24;\n$off-black: #121212;\n\n$box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);\n\n* {\n  box-sizing: border-box;\n  padding: 0;\n  margin: 0;\n}\n\nbody {\n    font-family: 'Roboto', sans-serif;\n    height: 100vh;\n    width: 100vw;\n    margin: 0;\n}\n\n#wrapper{\n  width: 100%;\n  height: 100%;\n  display: grid;\n  grid-template-columns: 1fr 8fr;\n  grid-template-rows: 1fr 10fr;\n  grid-template-areas: \"header header\"\n                       \"sidebar content\";\n}\n\n#header{\n  font-family: 'Rubik 80s Fade', cursive;\n  grid-area: header;\n  background-color: $purplish-black;\n  color: white;\n  display: flex;\n  justify-content: baseline;\n  align-items: center;\n  padding: 1rem;\n  font-size: 3rem;\n  height: 10vh;\n  display: flex;\n  justify-content: center;\n}\n\n#sidebar{\n  grid-area: sidebar;\n  background-color: $purplish-black;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: space-around;\n  gap: 1rem;\n  padding: 1rem;\n  height: 90vh;\n}\n\n.thumbnail{\n  width: 150px;\n  height: auto;\n}\n\n#content{\n  grid-area: content;\n  background-color: $off-black;\n  display: flex;\n    flex-direction: column;\n    align-items: center;\n}\n\n#controls{\n  background-color: $off-black;\n  width: 80%;\n  height: 10%;\n}\n\n#content-inner{\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "* {\n  box-sizing: border-box;\n  padding: 0;\n  margin: 0;\n}\n\nbody {\n  font-family: \"Roboto\", sans-serif;\n  height: 100vh;\n  width: 100vw;\n  margin: 0;\n}\n\n#wrapper {\n  width: 100%;\n  height: 100%;\n  display: grid;\n  grid-template-columns: 1fr 8fr;\n  grid-template-rows: 1fr 10fr;\n  grid-template-areas: \"header header\" \"sidebar content\";\n}\n\n#header {\n  font-family: \"Rubik 80s Fade\", cursive;\n  grid-area: header;\n  background-color: #1F1B24;\n  color: white;\n  display: flex;\n  justify-content: baseline;\n  align-items: center;\n  padding-left: 4rem;\n  font-size: 4rem;\n  height: 10vh;\n  display: flex;\n  justify-content: center;\n}\n\n#sidebar {\n  grid-area: sidebar;\n  background-color: #1F1B24;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: space-around;\n  gap: 1rem;\n  padding: 1rem;\n  height: 90vh;\n}\n\n.thumbnail {\n  width: 150px;\n  height: auto;\n}\n\n#content {\n  grid-area: content;\n  background-color: #121212;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n}\n\n#controls {\n  background-color: #121212;\n  width: 80%;\n  height: 10%;\n  margin-bottom: 2rem;\n  border: solid 2px #121212;\n  border-top: none;\n  border-radius: 0rem 0rem 2rem 2rem;\n}\n\n#content-inner {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}", "",{"version":3,"sources":["webpack://./src/styles/main.scss"],"names":[],"mappings":"AAUA;EACE,sBAAA;EACA,UAAA;EACA,SAAA;AAPF;;AAUA;EACI,iCAAA;EACA,aAAA;EACA,YAAA;EACA,SAAA;AAPJ;;AAUA;EACE,WAAA;EACA,YAAA;EACA,aAAA;EACA,8BAAA;EACA,4BAAA;EACA,sDAAA;AAPF;;AAWA;EACE,sCAAA;EACA,iBAAA;EACA,yBA/Be;EAgCf,YAAA;EACA,aAAA;EACA,yBAAA;EACA,mBAAA;EACA,kBAAA;EACA,eAAA;EACA,YAAA;EACA,aAAA;EACA,uBAAA;AARF;;AAWA;EACE,kBAAA;EACA,yBA7Ce;EA8Cf,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,6BAAA;EACA,SAAA;EACA,aAAA;EACA,YAAA;AARF;;AAWA;EACE,YAAA;EACA,YAAA;AARF;;AAWA;EACE,kBAAA;EACA,yBA7DU;EA8DV,aAAA;EACE,sBAAA;EACA,mBAAA;AARJ;;AAWA;EACE,yBApEU;EAqEV,UAAA;EACA,WAAA;EACA,mBAAA;EACA,yBAAA;EACA,gBAAA;EACA,kCAAA;AARF;;AAWA;EACE,aAAA;EACA,mBAAA;EACA,uBAAA;AARF","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');\n@import url('https://fonts.googleapis.com/css2?family=Rubik+80s+Fade&display=swap');\n\n$primary-color: #2fa8cc;\n$secondary-color: #f4f4f4;\n$purplish-black: #1F1B24;\n$off-black: #121212;\n\n$box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);\n\n* {\n  box-sizing: border-box;\n  padding: 0;\n  margin: 0;\n}\n\nbody {\n    font-family: 'Roboto', sans-serif;\n    height: 100vh;\n    width: 100vw;\n    margin: 0;\n}\n\n#wrapper{\n  width: 100%;\n  height: 100%;\n  display: grid;\n  grid-template-columns: 1fr 8fr;\n  grid-template-rows: 1fr 10fr;\n  grid-template-areas: \"header header\"\n                       \"sidebar content\";\n}\n\n#header{\n  font-family: 'Rubik 80s Fade', cursive;\n  grid-area: header;\n  background-color: $purplish-black;\n  color: white;\n  display: flex;\n  justify-content: baseline;\n  align-items: center;\n  padding-left: 4rem;\n  font-size: 4rem;\n  height: 10vh;\n  display: flex;\n  justify-content: center;\n}\n\n#sidebar{\n  grid-area: sidebar;\n  background-color: $purplish-black;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: space-around;\n  gap: 1rem;\n  padding: 1rem;\n  height: 90vh;\n}\n\n.thumbnail{\n  width: 150px;\n  height: auto;\n}\n\n#content{\n  grid-area: content;\n  background-color: $off-black;\n  display: flex;\n    flex-direction: column;\n    align-items: center;\n}\n\n#controls{\n  background-color: $off-black;\n  width: 80%;\n  height: 10%;\n  margin-bottom: 2rem;\n  border: solid 2px $off-black;\n  border-top: none;\n  border-radius: 0rem 0rem 2rem 2rem;\n}\n\n#content-inner{\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -520,8 +520,10 @@ module.exports = styleTagTransform;
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "alternate": () => (/* binding */ alternate),
 /* harmony export */   "imagesA": () => (/* binding */ imagesA),
-/* harmony export */   "setCurrent": () => (/* binding */ setCurrent)
+/* harmony export */   "setCurrent": () => (/* binding */ setCurrent),
+/* harmony export */   "stopShow": () => (/* binding */ stopShow)
 /* harmony export */ });
 /* harmony import */ var _styles_main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/main.scss */ "./src/styles/main.scss");
 /* harmony import */ var _assets_1A_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./assets/1A.png */ "./src/assets/1A.png");
@@ -563,12 +565,12 @@ __webpack_require__.r(__webpack_exports__);
 const img = document.querySelector('img')
 
 const imagesA = [_assets_1A_png__WEBPACK_IMPORTED_MODULE_1__, _assets_2A_png__WEBPACK_IMPORTED_MODULE_3__, _assets_3A_png__WEBPACK_IMPORTED_MODULE_5__, _assets_4A_png__WEBPACK_IMPORTED_MODULE_7__, _assets_5A_png__WEBPACK_IMPORTED_MODULE_9__, _assets_6A_png__WEBPACK_IMPORTED_MODULE_11__, _assets_7A_png__WEBPACK_IMPORTED_MODULE_13__]
-const imagesB = [_assets_1B_png__WEBPACK_IMPORTED_MODULE_2__, _assets_2B_png__WEBPACK_IMPORTED_MODULE_4__, _assets_3B_png__WEBPACK_IMPORTED_MODULE_6__, _assets_4B_png__WEBPACK_IMPORTED_MODULE_8__, _assets_5B_png__WEBPACK_IMPORTED_MODULE_10__, _assets_6B_png__WEBPACK_IMPORTED_MODULE_12__, _assets_7B_png__WEBPACK_IMPORTED_MODULE_14__];
+const imagesB = [_assets_1B_png__WEBPACK_IMPORTED_MODULE_2__, _assets_2B_png__WEBPACK_IMPORTED_MODULE_4__, _assets_3B_png__WEBPACK_IMPORTED_MODULE_6__, _assets_4B_png__WEBPACK_IMPORTED_MODULE_8__, _assets_5B_png__WEBPACK_IMPORTED_MODULE_10__, _assets_6B_png__WEBPACK_IMPORTED_MODULE_12__, _assets_7B_png__WEBPACK_IMPORTED_MODULE_14__]
 
 let currentA
 let currentB
 
-let maskDuration = 0
+let maskDuration = 500
 let pictureDuration = 2000
 
 function setCurrent(index) {
@@ -588,10 +590,22 @@ function swap() {
   }
 }
 
+
+let intervID;
+
 function alternate() {
-  setInterval(swap, pictureDuration)
+  if (!intervID) {
+    intervID = setInterval(swap, pictureDuration);
+  }
 }
-alternate()
+// alternate();
+
+function stopShow() {
+  clearInterval(intervID);
+  intervID = null;
+}
+
+
 
 function mask() {
   img.src = ""
@@ -637,7 +651,9 @@ function clickThumbnails() {
   thumbnails.forEach((element) => {
     console.log(element)
     element.addEventListener('click', () => {
+      ;(0,_index__WEBPACK_IMPORTED_MODULE_0__.stopShow)()
       ;(0,_index__WEBPACK_IMPORTED_MODULE_0__.setCurrent)(thumbnails.indexOf(element))
+      ;(0,_index__WEBPACK_IMPORTED_MODULE_0__.alternate)()
     })
   })
 }
@@ -900,4 +916,4 @@ module.exports = __webpack_require__.p + "7B.png";
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=bundle55d419f1f89a09480de4.js.map
+//# sourceMappingURL=bundleea556ece8f1317fd3630.js.map
