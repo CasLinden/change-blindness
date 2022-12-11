@@ -1,15 +1,84 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+80s+Fade&display=swap');
 
 $primary-color: #2fa8cc;
 $secondary-color: #f4f4f4;
+$purplish-black: #1F1B24;
+$off-black: #121212;
+
 $box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
 
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-    background-color: $primary-color;
     font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
 }
 
+#wrapper{
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 8fr;
+  grid-template-rows: 1fr 10fr;
+  grid-template-areas: "header header"
+                       "sidebar content";
+}
+
+#header{
+  font-family: 'Rubik 80s Fade', cursive;
+  grid-area: header;
+  background-color: $purplish-black;
+  color: white;
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+  padding: 1rem;
+  font-size: 3rem;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+}
+
+#sidebar{
+  grid-area: sidebar;
+  background-color: $purplish-black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+  padding: 1rem;
+  height: 90vh;
+}
+
+.thumbnail{
+  width: 150px;
+  height: auto;
+}
+
+#content{
+  grid-area: content;
+  background-color: $off-black;
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#controls{
+  background-color: $off-black;
+  width: 80%;
+  height: 10%;
+}
+
+#content-inner{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

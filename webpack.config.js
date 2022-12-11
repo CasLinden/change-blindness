@@ -61,7 +61,7 @@ module.exports = {
    },
    plugins: [
        new HtmlWebpackPlugin({
-           title: 'webpack app',
+           title: 'change-blindness',
            filename: 'index.html',
            template: 'src/template.html'
        }),
